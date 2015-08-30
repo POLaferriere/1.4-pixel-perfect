@@ -46,6 +46,7 @@ header *{
 }
 
 .header-nav {
+  position: relative;
   z-index: 10000;
 }
 
@@ -85,7 +86,9 @@ header *{
 }
 
 .header-nav-search {
-  float: right;
+  position: absolute;
+  top: 1px;
+  right: 1px;
   font-family: "Oswald", sans-serif;
   font-size: 1.8em;
   text-transform: uppercase;

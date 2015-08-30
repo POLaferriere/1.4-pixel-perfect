@@ -49,6 +49,12 @@ header *{
   z-index: 10000;
 }
 
+.header-nav::before {
+    display: block;
+    content: "";
+    clear: both;
+}
+
 
 .header-nav > * {
   display: inline-block;

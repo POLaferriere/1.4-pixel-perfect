@@ -1,0 +1,599 @@
+/*
+Colors:
+font dark blue: #133550
+blue theme: rgba(41, 113, 176, 1)
+*/
+
+* {
+  box-sizing: border-box;
+  border: 0px solid transparent;
+}
+
+body {
+  font-size: 62.5%;
+  max-width: 1300px;
+}
+ /*Header */
+
+
+header {
+  z-index: -2;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: #133550;
+  height: 525px;
+  padding: 16px 163px 0 131px;
+  background-image: url(https://garytray.files.wordpress.com/2011/08/waves.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-wrapper::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(41, 113, 176, 0.8);
+}
+
+header *{
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav {
+  z-index: 10000;
+}
+
+
+.header-nav > * {
+  display: inline-block;
+}
+
+.header-nav.logo {
+  float: left;
+}
+
+.header-nav-logo > * {
+  display: inline-block;
+}
+
+.header-nav-logo-icon {
+  height: 57px;
+  width: 57px;
+  margin-top: -10px;
+  margin-left: 4px;
+}
+
+.header-nav-logo-text {
+  float: right;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: -0.01rem;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.header-nav-search {
+  float: right;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  margin-right: 7px;
+
+}
+
+.header-nav-search-link {
+  float: left;
+  line-height: 1em;
+
+}
+
+#about {
+  z-index: 1000;
+  color: #133550;
+  line-height: 1em;
+  padding-right: 12px;
+  margin-right: 2px;
+}
+
+#search {
+  color: #133550;
+  letter-spacing: 0px;
+  padding-top: 0;
+  margin-right: 6px;
+  padding-bottom: 3px;
+}
+
+#search-icon {
+  transform:scale(-1, 1.1);
+  font-size: 0.8em;
+  margin-top: -1px;
+}
+
+.header-nav-search-links > * {
+  display: inline-block;
+}
+
+.header-title,
+.header-subtitle {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: white;
+  padding-left: 23px;
+  position: relative;
+  top: 129px;
+  letter-spacing: -2px;
+  font-size: 10.1em;
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  color: rgba(19, 53, 80, 1)
+  font-family:"Source Sans Pro", sans-serif;
+  position: relative;
+  top: 112px;
+  font-size: 1.0rem;
+  padding-left: 27px;
+  letter-spacing: -0.45px;
+}
+
+/*Main Body*/
+
+.content-container {
+  font-family: "Oswald", sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 160px 69px 164px;
+}
+
+.content-container::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.content-container > * {
+  float: left;
+}
+
+.content {
+  margin: 0;
+  max-width: 616px;
+  margin-right: 80px;
+}
+
+.content-title {
+  margin: 0;
+  font-weight: 350;
+  font-size: 3.9rem;
+  text-transform: uppercase;
+  line-height: 1.16em;
+}
+
+.content-title .fantastic {
+  letter-spacing: -1px;
+}
+
+.content-title .engaging {
+  letter-spacing: 1px;
+}
+
+.content-title .headline {
+  letter-spacing: 0.5px;
+}
+
+.content-byline {
+  margin: 0;
+  margin-bottom: 35px;
+  line-height: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: .8rem;
+}
+
+.content-byline img {
+  margin-top: 3px;
+  margin-left: 2px;
+  border-radius: 100%;
+}
+
+.content-byline .name {
+  color: rgba(41, 113, 176, 1);
+  margin-left: 8px;
+  margin-right: 10px;
+  position: relative;
+  top: -4px;
+}
+
+.content-byline .sentence {
+  position: relative;
+  top: -3px;
+  color: rgba(188, 198, 206, 1);
+}
+
+.content-byline .underline {
+  text-decoration: underline;
+  font-size: 0.81rem;
+}
+
+.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.content .underline {
+  text-decoration: underline;
+  color: rgba(188, 198, 206, 1);
+}
+
+.content-quote {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(41, 113, 176, 1);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  border-left: 2px solid rgba(211, 211, 211, 1);
+  margin-left: 5px;
+  margin-top: -8px;
+  padding: 12px 0 7px 16px;
+}
+
+p.third-paragraph {
+  line-height: 1.65rem;
+  letter-spacing: -0.4px;
+  margin-bottom: 27px;
+}
+
+.content-buttons {
+  margin: -11px 0 0 -1px;
+}
+
+.content-button {
+  background-color: rgba(166, 179, 190, 1);
+  color: white;
+  font-size: .8rem;
+  padding: 0;
+  margin: 0 4px;
+}
+
+button.comments {
+  margin-left: 3px;
+}
+
+.fa-comment {
+  position: relative;
+  left: -2px;
+  background-color: rgba(96, 104, 111, 1);
+  font-size: 1.1rem;
+  transform: scalex(0.9);
+  padding: 6px 8px 6px 11px;
+}
+
+.content-button .comments {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+button.upload {
+  margin-left: 4px;
+}
+
+.fa-cloud-upload {
+  background-color: rgba(96, 104, 111, 1);
+  font-size: 1.1rem;
+  padding: 6px 7px 6px 7px;
+}
+
+.content-button .upload {
+  display: inline-block;
+  margin: 0 15px 0 14px;
+}
+
+button.share {
+  margin-top: 1px;
+}
+
+.fa-share-square-o {
+  background-color: rgba(96, 104, 111, 1);
+  font-size: 0.9rem;
+  padding: 8px 9px 8px 11px;
+}
+
+.content-button .share {
+  display: inline-block;
+  margin: 0 14px 0 10px;
+}
+
+button:hover {
+  transition: 0.5s ease-in;
+  background-color: rgba(41, 113, 176, 1);
+}
+
+.fa:hover {
+  background-color: rgba(19, 53, 81, 1);
+}
+
+.rollover {
+  text-decoration: underline;;
+  color: rgba(41, 113, 176, 1);
+}
+
+.sidebar {
+  max-width: 278px;
+}
+
+.sidebar-photo {
+  width: 82px;
+  height: 82px;
+  margin: 23px 0 0 100px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.sidebar-name {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;;
+  font-size: 0.95rem;
+  color: rgba(41, 113, 176, 1);
+  letter-spacing: 0.5px;
+  margin: 13px -4px 0 0;
+}
+
+.sidebar-links {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  list-style: none;
+  color: rgba(166, 179, 190, 1);
+  font-size: 0.8rem;
+  margin:0 0 0 -2px;
+}
+
+.sidebar-link {
+  display: inline-block;
+  letter-spacing: 0.5px;
+  margin: 1px 6px 0 7px;
+}
+
+.sidebar-image {
+  position: relative;
+  margin: 53px 0 0 1px;
+}
+
+.sidebar-image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: -1px;
+  top: 0;
+  bottom: 24px;
+  background-color: rgba(41, 113, 176, 0.8);
+}
+
+.sidebar-image-link {
+  font-family: "Open Sans", sans-serif;
+  text-align: right;
+  text-decoration: underline;
+  color: rgba(188, 198, 206, 1);
+  font-size: 0.8rem;
+  letter-spacing: 0px;
+  margin-top: 3px;
+}
+
+.sidebar-article {
+  margin: 44px 0 0 2px;
+}
+.sidebar-article-heading {
+  color: rgba(41, 113, 176, 1);
+  text-transform: uppercase;
+  font-size: 1.10rem;
+  margin:0 0 0 1px;
+}
+
+.sidebar-article-text {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(166, 179, 190, 1);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.45px;
+  margin-top: 4px;
+}
+
+.sidebar-article-text .underline {
+  text-decoration: underline;
+}
+
+/*Footer*/
+
+footer {
+  height: 573px;
+  font-family: "Oswald", sans-serif;
+}
+
+footer * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.heading-wrap {
+  font-weight: 200;
+  display: block;
+  height: 147px;
+  text-align: center;
+  font-size: 1.95rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(226, 231, 234, 1)
+}
+
+.footer-heading {
+  color: rgba(19, 53, 81, 1);
+  width: 100%;
+  position: relative;
+  bottom: -23px;
+}
+
+.footer-links{
+  color: rgba(19, 53, 81, 1);
+  margin: 0 -8px 0 0;
+}
+
+.footer-links::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer-link {
+  transition: 0.5s ease-in-out;
+  border: 0;
+  position: relative;
+  height: 330px;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-link::before {
+  transition: 0.5s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(41, 113, 176, 0.8);
+}
+
+.footer-link-text {
+  letter-spacing: -0.45px;
+  display: inline-block;
+  position: absolute;
+  line-height: 100%;
+  bottom: 13px;
+  left: 15px;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+
+
+#link1 {
+  background-image: url(images/surfing.jpg);
+  width: 324px;
+}
+
+#link2 {
+  background-image: url(images/paddling.jpg);
+  width: 325px;
+}
+
+#link2 span {
+  left: 16px;
+}
+
+#link3 {
+  background-image: url(images/kayaking.jpg);
+  width: 326px;
+}
+
+#link3-1 {
+  font-size: 1.85rem;
+  bottom: 53px;
+  left: 19px;
+  letter-spacing: 0.2px;
+}
+
+#link3-2 {
+  left: 18px;
+  bottom: 16px;
+  letter-spacing: -0.3px
+}
+
+#link4 {
+  background-image: url(images/beer.jpeg);
+  width: 325px;
+}
+
+#link4 span {
+  left: 19px;
+}
+
+.footer-link:hover {
+  transition: 0.5s ease-in;
+  color: white;
+}
+
+.footer-link:hover::before {
+  transition: 0.5s ease-in;
+  background-color: transparent;
+}
+
+.footer-container {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(166, 179, 190, 1);
+  position: relative;
+  background-color: rgba(19, 53, 81, 1);
+  border: 0;
+  height: 97px;
+}
+
+.footer-container-info > * {
+  display: inline-block;
+}
+
+.footer-container-info-copy {
+  font-size: 0.8rem;
+  position: absolute;
+  top: -11px;
+  left: 152px;
+  letter-spacing: 0.2px;
+}
+
+.footer-container-info-copy-logo {
+  position: relative;
+  top: 24px;
+  left: -1px;
+}
+
+.footer-container-info-links {
+  font-size: 0.8rem;
+  position: absolute;
+  right: 157px;
+  top: 38px;
+  letter-spacing: 0.16px;
+}
+
+.footer-container-info-link {
+  display: inline-block;
+  padding: 0 6px;
+  line-height: 0.85rem;
+  border-right: 1px solid rgba(166, 179, 190, 1);
+}
+
+#nav1,
+#nav2 {
+  padding-right: 7px;
+}
+
+#nav5 {
+  border-color: transparent;
+}

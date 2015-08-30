@@ -28,7 +28,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.header-wrapper::after {
+.header-wrapper::before {
   z-index: -1;
   content: "";
   display: block;
@@ -270,7 +270,7 @@ p.third-paragraph {
 }
 
 .content-button {
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
   background-color: rgba(166, 179, 190, 1);
   color: white;
   font-size: .8rem;
@@ -278,8 +278,10 @@ p.third-paragraph {
   margin: 0 4px;
 }
 
-.fa {
-  transition: 0.5s ease-in-out;
+.fa-comment,
+.fa-cloud-upload,
+.fa-share-square-o {
+  transition: 0.25s ease-in-out;
   background-color: rgba(96, 104, 111, 1);
 }
 
@@ -329,12 +331,12 @@ button.share {
 }
 
 .content-button:hover {
-  transition: 0.5s ease-in;
+  transition: 0.25s ease-in;
   background-color: rgba(41, 113, 176, 1);
 }
 
 .content-button:hover .fa {
-  transition: 0.5s ease-in;
+  transition: 0.25s ease-in;
   background-color: rgba(19, 53, 81, 1);
 }
 
@@ -476,7 +478,7 @@ footer ul {
 }
 
 .footer-link {
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
   border: 0;
   position: relative;
   height: 330px;
@@ -486,7 +488,7 @@ footer ul {
 }
 
 .footer-link::before {
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
   content: "";
   display: block;
   position: absolute;
@@ -551,12 +553,12 @@ footer ul {
 }
 
 .footer-link:hover {
-  transition: 0.5s ease-in;
+  transition: 0.25s ease-in;
   color: white;
 }
 
 .footer-link:hover::before {
-  transition: 0.5s ease-in;
+  transition: 0.25s ease-in;
   background-color: transparent;
 }
 

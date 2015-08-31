@@ -10,6 +10,7 @@ blue theme: rgba(41, 113, 176, 1)
 }
 
 body {
+  z-index: -5;
   font-size: 62.5%;
   max-width: 1300px;
 }
@@ -17,7 +18,6 @@ body {
 
 
 header {
-  z-index: -2;
   position: relative;
   font-family: "Open Sans", sans-serif;
   color: #133550;
@@ -29,7 +29,6 @@ header {
 }
 
 .header-wrapper::before {
-  z-index: -1;
   content: "";
   display: block;
   position: absolute;
@@ -47,7 +46,7 @@ header *{
 
 .header-nav {
   position: relative;
-  z-index: 10000;
+  z-index: 1;
 }
 
 .header-nav::before {
@@ -65,7 +64,7 @@ header *{
   float: left;
 }
 
-.header-nav-logo > * {
+.header-nav-link > * {
   display: inline-block;
 }
 
@@ -86,6 +85,7 @@ header *{
 }
 
 .header-nav-search {
+  z-index: 2;
   position: absolute;
   top: 1px;
   right: 1px;
@@ -97,14 +97,9 @@ header *{
 }
 
 .header-nav-search-link {
+  z-index: 10;
   float: left;
   line-height: 1em;
-}
-
-.header-link{
-  text-decoration: none;
-  color: #133550;
-  cursor: pointer;
 }
 
 .header-link::before {
@@ -113,8 +108,14 @@ header *{
   clear: both;
 }
 
+.header-nav-link {
+  display: inline-block;
+  z-index: 20;
+  text-decoration: none;
+  color: inherit;
+}
+
 #about {
-  z-index: 1000;
   color: #133550;
   line-height: 1em;
   padding-right: 12px;

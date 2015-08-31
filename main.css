@@ -46,7 +46,6 @@ header *{
 
 .header-nav {
   position: relative;
-  z-index: 1;
 }
 
 .header-nav::before {
@@ -66,6 +65,12 @@ header *{
 
 .header-nav-link > * {
   display: inline-block;
+}
+
+.header-nav-link,
+.header-nav-links {
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-nav-logo-icon {

@@ -94,13 +94,23 @@ header *{
   text-transform: uppercase;
   margin-top: 6px;
   margin-right: 7px;
-
 }
 
 .header-nav-search-link {
   float: left;
   line-height: 1em;
+}
 
+.header-link{
+  text-decoration: none;
+  color: #133550;
+  cursor: pointer;
+}
+
+.header-link::before {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #about {
@@ -125,7 +135,7 @@ header *{
   margin-top: -1px;
 }
 
-.header-nav-search-links > * {
+.header-nav-search-link {
   display: inline-block;
 }
 
@@ -270,6 +280,7 @@ p.third-paragraph {
 }
 
 .content-button {
+  cursor: auto;
   transition: 0.25s ease-in-out;
   background-color: rgba(166, 179, 190, 1);
   color: white;
@@ -371,7 +382,6 @@ button.share {
   font-family: "Open Sans", sans-serif;
   display: block;
   list-style: none;
-  color: rgba(166, 179, 190, 1);
   font-size: 0.8rem;
   margin:0 0 0 -2px;
 }
@@ -380,6 +390,11 @@ button.share {
   display: inline-block;
   letter-spacing: 0.5px;
   margin: 1px 6px 0 7px;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: rgba(166, 179, 190, 1);
 }
 
 .sidebar-image {
@@ -467,7 +482,6 @@ footer ul {
 }
 
 .footer-links{
-  color: rgba(19, 53, 81, 1);
   margin: 0 -8px 0 0;
 }
 
@@ -475,6 +489,10 @@ footer ul {
   content: "";
   display: block;
   clear: both;
+}
+
+.footer-links a {
+  color: rgba(19, 53, 81, 1);
 }
 
 .footer-link {
@@ -602,6 +620,11 @@ footer ul {
   padding: 0 6px;
   line-height: 0.85rem;
   border-right: 1px solid rgba(166, 179, 190, 1);
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  color: rgba(166, 179, 190, 1);
 }
 
 #nav1,
